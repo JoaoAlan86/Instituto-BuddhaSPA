@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+.mostrarMais {
+    display:none;
+}
+
+</style>
+<body>
+    
+    <div class="carrossel owl-carousel">
+        <div class="conquista">
+            <div class="conquistaCaixa">
+                <img src="img/logos/tata-consultancy-services-logo-tcs.png" alt="logo tata consultancy services">
+                <div class="tituloConquista">
+                    Tata Consultancy Services (TCS)
+                </div>
+                <p>Vencedor do primeiro hackathon em parceria com a FIEB.<span id="tresPontos">...</span><span id="mostrarMais"><br><br>A proposta era desenvolver um aplicativo para smartphone sobre educação em 5 dias, desenvolvi com pessoas que não conhecia até então, mas com trabalho em equipe vencemos esse desafio.<br><br>Isso aconteceu em 2017, foi o meu primeiro contato com a programação.</span></p>
+                <button onclick="leiaMais()" id="btnLeiaMais" class="btnLeiaMais">Leia Mais</button>
+            </div>
+        </div>
+        <div class="conquista">
+            <div class="conquistaCaixa">
+                <img src="img/logos/autocad-logo.png" alt="AutoCAD logo">
+                <div class="tituloConquista">
+                    Domínio completo do AutoCAD
+                </div>
+                <p>Ao final do meu curso, em 2017 dominei completamente a ferramenta.</p>
+            </div>
+        </div>
+</div>
+
+    <script>
+
+function leiaMais() {
+    const tresPontos = document.getElementById('tresPontos');
+    const mostrarMais = document.getElementById('mostrarMais');
+    const btnLeiaMais = document.getElementById('btnLeiaMais');
+
+    if (tresPontos.style.display === 'none') {
+        tresPontos.style.display = 'inline';
+        mostrarMais.style.display = 'none';
+        btnLeiaMais.innerHTML = 'Leia Mais';
+    } else {
+        tresPontos.style.display = 'none';
+        mostrarMais.style.display = 'inline';
+        btnLeiaMais.innerHTML = 'Leia Menos';
+    }
+}
+
+
+
+
+    </script>
+
+</body>
+</html>

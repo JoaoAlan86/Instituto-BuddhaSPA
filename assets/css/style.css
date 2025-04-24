@@ -155,7 +155,9 @@
   user-select: none;
 }
 
-
+.mostrarMais {
+  display:none;
+}
 
 .card-tranforme-vidas{
   background-repeat: no-repeat;

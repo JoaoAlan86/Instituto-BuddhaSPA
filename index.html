@@ -19,7 +19,7 @@
       <span></span>
     </div>
     <ul class="menu" id="menu">
-      <li><a href="#sobre-nos">Sobre Nós</a></li>
+      <li><a href="#quemsomos">Quem Somos</a></li>
       <li><a href="#atuacao">Nossa Atuação</a></li>
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#impacto">Impacto Social</a></li>
@@ -68,15 +68,38 @@
   
 
 
-  <section id="sobre-nos">
+  <section id="quemsomos">
 
+  
+              <h2>O <i style="color: #7e0000;">Instituto Buddha </i>SPA foi fundado com o propósito de promover o 
+                bem-estar entre<span id="tresPontos">...</span><span id="mostrarMais" style="display: none"> diversos membros da sociedade e contribuir para odesenvolvimento comunitário, 
+                  com foco especial na capacitação e inserçãode pessoas no mercado de trabalho.
+                  O Instituto é a materialização damissão da rede BUDDHA SPA que desde 2001 
+                  oferece experiências debem-estar à sociedade, proporcionando um oásis em meio a agitação dacidade. O Instituto tem a missão de horizontalizar as práticas de bem estarpor meio de iniciativas sociais que tornam o conceito acessível a pessoasque, 
+                  de outra forma, não teriam condições de acessá-las.<br></span> <a style="font-size: 12px;" onclick="leiaMais()" id="btnLeiaMais" class="btnLeiaMais">Leia Mais</a></h2>
+             
+          </div>
+      </div>
+
+
+</div>
+
+
+    <!--
     <h2> O <a style="text-decoration: none; color: #d78b18;" href="#">
-      Instituto Buddha SPA </a> é uma organização feita por pessoas, para pessoas.</h2> 
+
+      Instituto Buddha SPA </a> foi fundado com o propósito de promover o 
+      bem-estar entre <span style="font-size: 12px; opacity: 1;"><a href="#" style="text-decoration: none; color:#392617;">
+        Leia Mais</a></span> <span style="display: none;">diversos membros da sociedade e contribuir para odesenvolvimento comunitário, 
+      com foco especial na capacitação e inserçãode pessoas no mercado de trabalho.
+      O Instituto é a materialização damissão da rede BUDDHA SPA que desde 2001 
+      oferece experiências debem-estar à sociedade, proporcionando um oásis em meio a agitação dacidade. O Instituto tem a missão de horizontalizar as práticas de bem estarpor meio de iniciativas sociais que tornam o conceito acessível a pessoasque, 
+      de outra forma, não teriam condições de acessá-las.</span></h2> 
       
       <div class="card"><h3 style="color: #7e0000;">Sem uma rede engajada, comprometida com a melhoria de vida e bem estar, 
         nada disso seria possível.</h3></div>
-    </div>
-  
+      </div>
+      -->
   </section>
 
   <section id="card-banner-doe">
@@ -366,6 +389,25 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 6000); // Change image every 2 seconds
 }
+
+
+function leiaMais() {
+    const tresPontos = document.getElementById('tresPontos');
+    const mostrarMais = document.getElementById('mostrarMais');
+    const btnLeiaMais = document.getElementById('btnLeiaMais');
+
+    if (tresPontos.style.display === 'none') {
+        tresPontos.style.display = 'inline';
+        mostrarMais.style.display = 'none';
+        btnLeiaMais.innerHTML = 'Leia Mais';
+    } else {
+        tresPontos.style.display = 'none';
+        mostrarMais.style.display = 'inline';
+        btnLeiaMais.innerHTML = 'Leia Menos';
+    }
+}
+
+
 
     
   </script>
