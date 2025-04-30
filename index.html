@@ -13,6 +13,7 @@
 <body>
   <nav>
     <a href="#" class="logo"><img src="assets/img/logo_branco.png" alt=""></a>
+
     <div class="menu-toggle" onclick="toggleMenu()">
       <span></span>
       <span></span>
@@ -20,9 +21,8 @@
     </div>
     <ul class="menu" id="menu">
       <li><a href="#quemsomos">Quem Somos</a></li>
-      <li><a href="#atuacao">Nossa Atuação</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#impacto">Impacto Social</a></li>
+      <li><a href="#atuacao">O que fazemos</a></li>
+          <li><a href="#projetos">Impacto Social</a></li>
       <li><a href="#participe">Participe</a></li>
       <li><a href="#" class="btn">Doe Agora</a></li>
     </ul>
@@ -204,53 +204,75 @@
 
 
   <section id="atuacao">
-    <h2>Nossa Atuação</h2>
-    <div class="grid">
-      <div class="card" style="background-color: #e4e5e2;"><h3>Educação</h3><p>Oficinas e formações para desenvolvimento pessoal e profissional.</p></div>
-      <div class="card" style="background-color: #e4e5e2;"><h3>Bem-estar</h3><p>Atendimentos terapêuticos gratuitos para comunidades carentes.</p></div>
-      <div class="card" style="background-color: #e4e5e2;"><h3>Voluntariado</h3><p>Engajamento de terapeutas e parceiros em causas sociais.</p></div>
-      </div>
+    <h2>O que fazemos</h2>
+
+    <i >Com foco em transformar vidas, o Instituto inicia suas atividades com 
+    o lançamento de dois projetos estratégicos: o "Bem-Estar para Todos" e
+     a"Formação de Terapeutas Bem-Estar". Através da oferta de serviços gratuitos
+      e a formação de novos profissionais o Instituto buscademocratizar 
+      o acesso a práticas de bem-estar e fortalecer a rede decuidado em 
+      comunidades vulneráveis. Ambas ações serão ofertadas semcustos para 
+      os beneficiários através de parceiras com Instituições doterceiro setor 
+      ou público, como foco na democratização do acesso a açãode bem- estar.</i>
+  
+    <div class="grid" style="margin-top: 20px;">
+
+      <div class="card" style="background-color: #e4e5e2;"><h3>Bem - Estar para Todos</h3><p>O projeto "Bem-Estar para Todos" leva os benefícios da massagem paraquem mais precisa, oferecendo de forma gratuita às pessoas carentes.</p></div>
+      <div class="card" style="background-color: #e4e5e2;"><h3>Terapeutas Bem Estar</h3><p>A Formação de Terapeutas Bem-Estar é uma capacitação profissional gratuita.</p></div>
+     </div>
   </section>
 
   <section id="projetos">
 
-    <h2>Projetos em Destaque</h2>
+    <h2>Impacto Social</h2>
+
+
+<div>
+    <h2><i style="text-align: center" >As atividades do instituto estão diretamente alinhadas com os 
+      Objetivos de Desenvolvimento Sustentável (ODS), promovendo avanços 
+      significativos em áreas chave para o desenvolvimento social e econômico,
+       contribuindo diretamente nos seguintes objetivos:</i></h2>
+
+
+
 
     <div class="grid">
       
       <div style="height: 20vh; opacity: 0.8;" class="card spa-do-bem">
 
-        <!--
-        <h3>Spa do Bem</h3>
-        <p>Oferece terapias relaxantes a quem mais precisa.</p>
-        -->
-      </div>
+        <ul style="display: flex; list-style: none;">
 
-      <div style="height: 20vh; opacity: 0.8;" class="card bem-estar">
+          <li class="img-container">
+            <img style="border-radius: 20px;"  src="assets/img/ods_quadro_3.png" alt="">
+          </li>
 
-        <!--
-        <h3>Bem-estar em Ação</h3>
-        <p>Mutirões solidários com foco na saúde e autocuidado.</p>
-        -->
+          <li class="img-container" style="margin-left: 20px;">
+            <img style="border-radius: 20px;" src="assets/img/ods_quadro_4.png" alt="">
+          </li>
+
+          <li class="img-container" style="margin-left: 20px;">
+            <img style="border-radius: 20px;"  src="assets/img/ods_quadro_5.png" alt="">
+          </li>
+
+          <li class="img-container" style="margin-left: 20px;">
+            <img style="border-radius: 20px;"  src="assets/img/ods_quadro_8.png" alt="">
+          </li>
+
+          <li class="img-container" style="margin-left: 20px;">
+            <img style="border-radius: 20px;"  src="assets/img/ods_quadro_10.png" alt="">
+          </li>
+
+        </ul>
+          
+       
       </div>
 
     </div>
+
+  </div>
   </section>
 
 
-
-  <section id="impacto" class="impacto">
-    <h2 style="margin-top: -110px;">HISTÓRIAS DE TRANSFORMAÇÃO</h2>
-
-    <div class="testemunho-1" style="margin-left: 15%;"></div>
-    <blockquote style="margin-left: 20%;">"O toque de cuidado transforma mais do que o corpo — transforma vidas." 
-     </blockquote>
-
-    <div class="testemunho-2" style="margin-left: 15%;"></div>
-    <blockquote style="margin-left: 20%;">"Participar do Instituto Buddha Spa me ensinou a importância de doar o melhor de mim."
-     
-    </blockquote>
-  </section>
 
    <!--Inicio Contadores Atendimentos -->
    <section class="contadores">
@@ -264,9 +286,9 @@
 
       <ul class="contadores-realizacoes">
 
-          <span style="background-color: #ffffff;">Novos Parceiros +</span><li style="margin-top: 50px; margin-left: -320px;" id="counter1">0</li>
-          <span style="background-color: #ffffff;">Pessoas Impactadas +</span><li style="margin-top: 50px; margin-left: -320px;" id="counter2">0</li>
-          <span style="background-color: #ffffff;">Ações Sociais +</span><li style="margin-top: 50px; margin-left: -320px;" id="counter3">0</li>
+          <span style="background-color: #ffffff;">Mulheres capacitadas Profissionalmente +</span><li style="margin-top: 50px; margin-left: -200px;" id="counter1">0</li>
+          <span style="background-color: #ffffff;">Voluntarios +</span><li style="margin-top: 50px; margin-left: -200px;" id="counter2">0</li>
+          <span style="background-color: #ffffff;">Pessoas Impactadas +</span><li style="margin-top: 50px; margin-left: -200px;" id="counter3">0</li>
   
       </ul>
           
@@ -285,6 +307,19 @@
     </div>
   </section>
 
+
+  <section id="impacto" class="impacto">
+    <h2 style="margin-top: 50px;">HISTÓRIAS DE TRANSFORMAÇÃO</h2>
+
+    <div class="testemunho-1" style="margin-left: 15%;"></div>
+    <blockquote style="margin-left: 20%;">"O toque de cuidado transforma mais do que o corpo — transforma vidas." 
+     </blockquote>
+
+    <div class="testemunho-2" style="margin-left: 15%;"></div>
+    <blockquote style="margin-left: 20%;">"Participar do Instituto Buddha Spa me ensinou a importância de doar o melhor de mim."
+     
+    </blockquote>
+  </section>
 
   
   <footer>
@@ -358,10 +393,9 @@ function increment(i, max, element){
   },20)
 }
 
-increment(0,1500, counter1 );
-increment(0,3000, counter2 );
-increment(0,4500, counter3 );
-
+increment(0,31, counter1 );
+increment(0,12, counter2 );
+increment(0,171, counter3 );
 
 
     function toggleMenu() {

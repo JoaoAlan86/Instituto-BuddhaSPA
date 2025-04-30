@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protótipo Buddha Spa College com Produtos Via Aroma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Poppins', sans-serif; color:#3C2F2F; background:#EFEFEF; scroll-behavior:smooth; }
+    a { text-decoration:none; }
+    .container { max-width:1200px; margin:0 auto; padding:0 20px; }
+    img { display:block; max-width:100%; }
+
+    /* Header */
+    header { background:#fff; padding:20px 0; position:sticky; top:0; z-index:1000; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    .logo { font-family:'Playfair Display', serif; font-size:28px; font-weight:600; color:#7C452B; }
+    nav ul { list-style:none; display:flex; gap:20px; }
+    nav a { color:#7C452B; font-weight:500; transition:color .3s; }
+    nav a:hover { color:#C19A6B; }
+    .cta-header { background:#C19A6B; padding:10px 20px; border-radius:4px; color:#fff; font-weight:600; transition:background .3s; }
+    .cta-header:hover { background:#A17C5B; }
+
+    /* Banner principal de essência aromática */
+    .main-banner {
+      position:relative;
+      width:100%;
+      height:70vh;
+      background:url('https://via.placeholder.com/1600x900?text=Essência+Aromática') center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .main-banner .overlay {
+      position:absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      background:rgba(44,95,45,0.6);
+    }
+    .main-banner .banner-content {
+      position:relative;
+      text-align:center;
+      color:#fff;
+      padding:20px;
+    }
+    .main-banner h1 {
+      font-family:'Playfair Display', serif;
+      font-size:48px;
+      margin-bottom:10px;
+    }
+    .main-banner p {
+      font-size:18px;
+      max-width:600px;
+      margin:0 auto;
+    }
+
+    /* Seções subsequentes omitidas para brevidade */
+
+    /* Footer */
+    footer { background:#3C2F2F; color:#EFEFEF; padding:60px 0 20px; }
+    /* Estilos finais omitidos */
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+      <a href="#" class="logo">Buddha Spa College</a>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Produtos</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#" class="cta-header">Loja</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner principal de essência aromática -->
+  <section class="main-banner">
+    <div class="overlay"></div>
+    <div class="banner-content container">
+      <h1>Descubra o Poder da Essência Aromática</h1>
+      <p>Transforme seus ambientes com fragrâncias exclusivas de alta qualidade, desenvolvidas para relaxar corpo e mente.</p>
+    </div>
+  </section>
+
+  <!-- Resto do conteúdo continua aqui -->
+
+  <footer>
+    <div class="container">
+      <!-- Footer widgets e newsletter -->
+      <div class="footer-bottom">&copy; 2025 Buddha Spa College • Loja Via Aroma. Todos os direitos reservados.</div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -5,7 +5,6 @@
       src: url(../font/Albert_Sans/AlbertSans-VariableFont_wght.ttf);
   }
   
-  
     body {
       font-family: 'Open Sans', sans-serif;
       margin: 0;
@@ -26,8 +25,7 @@
       z-index: 1000;
       height: 12vh;
     }
-
-    
+ 
     nav .logo {
       font-size: 1.5rem;
       font-weight: 600;
@@ -56,9 +54,8 @@
       transition: color 0.3s;
     }
     nav ul li a:hover {
-      color: #392617;
+      color: #d78b18;
     }
-
 
     .btn{
       display: flex;
@@ -72,7 +69,6 @@
       font-family: 'albert';
       color: #392617;
   }
-
 
     .menu-toggle {
       display: none;
@@ -109,8 +105,6 @@
       margin: 0;
       padding: 0;
     }
-
-
 
  /* Slideshow */
 
@@ -174,7 +168,6 @@
       color: #7e0000;
   }
   
-  
   .card-paralax{
   margin-top: 5%;
   height: 80vh;
@@ -185,13 +178,11 @@
   background-position: initial;
   }
   
-  
   .card-como-transformamos{
       background-repeat: no-repeat;
       background-position: center;
       text-align: center; 
       }
-  
   
       .paralax-realizacoes{
           margin-top: 5%;
@@ -199,12 +190,10 @@
           background-size: 100%;
       }
   
-  
       .paralax-realizacoes span{ 
           font-size: 20px; 
           color: #d78b18;
       }
-  
   
       .contadores-realizacoes{
           list-style-type: none;
@@ -216,6 +205,10 @@
           margin-top: 2%;
           }
 
+
+          .contadores-mobile {
+            display:none;
+          }
       
       .card-como-transformamos p{
           font-size: 32px;
@@ -225,14 +218,11 @@
           color: #7e0000;
       }
   
-  
       .card-historias-transformacao{
           background-repeat: no-repeat;
           background-position: center;
           text-align: center;
           }
-  
-  
   
       .card-historias-transformacao p{
           margin-top: 10%;
@@ -241,7 +231,6 @@
           font-weight: bold;
           color: #7e0000;
       }
-  
   
       .paralax-historias-tranformacao{
           margin-top: 5%;
@@ -253,8 +242,6 @@
   
       }
 
-  
-  
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -264,7 +251,6 @@
   background-color: rgba(0,0,0,0.8);
 }
     
-
     .fade {
       animation-name: fade ;
       animation-duration: 1.5s;
@@ -304,7 +290,7 @@
 
 .spa-do-bem{
   
-  background-image: url("../img/spa-do-bem.png");
+  background-image: url("assets/img/ods_quadro.png");
   
   /*
   background: linear-gradient(97.96deg, #d78b18 4.23%, #ffffff 97.69%);
@@ -312,9 +298,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  border-width: 2px;
-  border-color: #ccc;
-  border-style: solid;
+
   }
 
   .bem-estar{
@@ -333,7 +317,6 @@
 
     }
 
-
     .impacto{
      background-color: #ffffff;
       background-position: center;
@@ -345,15 +328,17 @@
     }
 
 
+
     .card:hover {
       transform: translateY(-5px);
     }
+
+
     .card h3 {
       color: #392617;
       font-size: 1.8rem;
       margin-bottom: 10px;
     }
-
 
     .testemunho-1{
      background-image: url("../img/testemunhal1.png");
@@ -364,7 +349,6 @@
      height: 100px; 
      border-radius: 50%;
     }
-
 
     .testemunho-2{
       margin-top: 5%;
@@ -378,7 +362,6 @@
  
      }
 
-
     blockquote {
       font-style: italic;
       background: #f2ede7;
@@ -386,7 +369,6 @@
       height: 40px;
     }
 
-    
     .cta {
       border-radius: 20px;
       text-align: center;
@@ -411,17 +393,34 @@
     }
 
 
-  
+
+
+   .img-container img{
+      width: 100%;
+      height: 100%;
+      -webkit-transition: -webkit-transform .5s ease;
+      transition: transform .5s ease;
+   }
+   
+   .img-container:hover img{
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+   }
+
+
+
+   
+
     footer {
       margin-top: 100px;
-      background: linear-gradient(97.96deg, #d78b18 -20.00%,#e4e5e2 80.00%);
-      color: #392617;
+      background: linear-gradient(97.96deg, #425f1d -20.00%,#425f1d 80.00%);
+      color: #ffffff;
       padding: 60px 20px;
       font-family: sans-serif;
     }
   
     footer a {
-      color: #392617;
+      color: #ffffff;
       text-decoration: none;
       transition: all 0.3s ease;
     }
@@ -482,10 +481,10 @@
       max-width: 1200px;
       margin: 40px auto 0;
       padding-top: 20px;
-      border-top: 1px solid #392617;
+      border-top: 1px solid #ffffff;
       text-align: center;
       font-size: 13px;
-      color: #392617;
+      color: #ffffff;
     }
   
     @media (min-width: 768px) {
